@@ -1,0 +1,5 @@
+# setup project
+brew install yarn
+nvm install lts/*
+yarn global add create-react-app
+npx create-react-app green-react
