@@ -3,6 +3,7 @@ WORKDIR '/app'
 COPY ./package*.json ./
 RUN yarn install
 COPY . .
+RUN yarn test --coverage
 RUN yarn build
 
 FROM nginx

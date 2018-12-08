@@ -2,8 +2,7 @@ sudo: required
 services:
   - docker
 
-before_install:
-  - make build_dev
-
 script:
-  - make test
+  - make build_prod
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push sppiotrowski/green-react-prod

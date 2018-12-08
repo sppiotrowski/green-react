@@ -1,9 +1,11 @@
 # Green React
 ```sh
-# usage
+# build & run docker dev image
+make dev
 
-make dev  # build & run docker dev image
-make prod # build & run docker prod image
+# build prod image
+make build_prod
 
-cat Makefile  # to check other options
+# all options
+cat Makefile
 ```
